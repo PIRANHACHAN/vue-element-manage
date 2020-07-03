@@ -5,6 +5,9 @@ import store from './store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+// 引入mock.js，模拟后端数据
+require('./mock/mock.js')
+
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false

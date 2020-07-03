@@ -2,7 +2,13 @@
   <div id="app">
     <el-container>
       <el-aside width="200px">
-        <el-menu default-active class="el-menu-vertical-demo" router>
+        <el-menu
+          class="el-menu-vertical-demo"
+          background-color="#545c64"
+          text-color="#fff"
+          active-text-color="#ffd04b"
+          router
+        >
           <el-menu-item index="/">
             <i class="el-icon-s-home"></i>
             <span slot="title">首页</span>
@@ -57,17 +63,17 @@
 }
 
 .el-aside {
-  background-color: #d3dce6;
+  background-color: #545c64;
   color: #333;
   text-align: left;
   line-height: 200px;
 }
 
 .el-main {
-  background-color: #e9eef3;
+  /* background-color: #e9eef3; */
   color: #333;
-  text-align: center;
-  line-height: 160px;
+  /* text-align: center; */
+  /* line-height: 160px; */
 }
 
 body > .el-container {
