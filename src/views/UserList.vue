@@ -54,7 +54,7 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'Application',
+  name: 'UserList',
   data() {
     return {
       tableData: [],

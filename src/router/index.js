@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Config from '../views/Config.vue'
+import About from '../views/About.vue'
 
 Vue.use(VueRouter)
 
@@ -18,15 +18,20 @@ const routes = [
     component: Home,
   },
   {
-    path: '/application',
-    name: 'Application',
+    path: '/userlist',
+    name: 'UserList',
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/Application.vue'),
+    component: () => import('../views/UserList.vue'),
   },
   {
-    path: '/config',
-    name: 'Config',
-    component: Config,
+    path: '/soldanalysis',
+    name: 'SoldAnalysis',
+    component: () => import('../views/SoldAnalysis.vue'),
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
   },
 ]
 
